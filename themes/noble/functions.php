@@ -24,7 +24,7 @@ function noble_styles() {
 add_action( 'wp_enqueue_scripts', 'noble_styles' );
 
 if ( ! function_exists( 'noble_setup' ) ) {
-	function fse_setup() {
+	function noble_setup() {
 		add_theme_support( 'wp-block-styles' );
 	}
 }
