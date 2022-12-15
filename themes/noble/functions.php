@@ -14,14 +14,10 @@
  * @since 1.0.0
  */
 function noble_styles() {
-	wp_enqueue_style(
-		'noble-style',
-		get_stylesheet_uri(),
-		array(),
-		wp_get_theme()->get( 'Version' )
-	);
+	wp_enqueue_style( 'noble-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'noble_styles' );
+
 
 if ( ! function_exists( 'noble_setup' ) ) {
 	function noble_setup() {
@@ -29,3 +25,4 @@ if ( ! function_exists( 'noble_setup' ) ) {
 	}
 }
 add_action( 'after_setup_theme', 'noble_setup' );
+
